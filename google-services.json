@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202397914550",
+    "project_id": "aimpress-sprint4",
+    "storage_bucket": "aimpress-sprint4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202397914550:android:ef00a22308b45abcd05d17",
+        "android_client_info": {
+          "package_name": "br.com.fiap.aimpress"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAouCFvwzrpZcUzERz33KGOIL9bktd7LRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

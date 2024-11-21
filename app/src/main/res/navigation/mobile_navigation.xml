@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="br.com.fiap.aimpress.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_cadastro"
+            app:destination="@+id/CadastroFragment"
+            />
+
+        <action
+            android:id="@+id/action_home_to_login"
+            app:destination="@+id/LoginFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="br.com.fiap.aimpress.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="br.com.fiap.aimpress.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_forgot"
+        android:name="br.com.fiap.aimpress.ui.forgotpassword.ForgotPasswordFragment"
+        android:label="Forgot"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgot_to_home"
+            app:destination="@id/navigation_home"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="br.com.fiap.aimpress.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login"
+        >
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/navigation_home"
+            />
+        <action
+            android:id="@+id/action_login_to_cadastro"
+            app:destination="@id/navigation_cadastro"
+            />
+        <action
+            android:id="@+id/action_login_to_forgort"
+            app:destination="@id/navigation_forgot"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_cadastro"
+        android:name="br.com.fiap.aimpress.ui.cadastro.CadastroFragment"
+        android:label="Cadastro"
+        tools:layout="@layout/fragment_cadastro"
+        >
+        <action
+            android:id="@+id/action_cadastro_to_home"
+            app:destination="@id/navigation_home"
+            />
+    </fragment>
+
+</navigation>
